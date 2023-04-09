@@ -1,4 +1,4 @@
-import { Button, Nav, Container, Navbar as NavbarBS } from "react-bootstrap"
+import { NavDropdown, Button, Nav, Container, Navbar as NavbarBS } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 
@@ -12,10 +12,17 @@ export function Navbar() {
     return (
         <NavbarBS className="bg-white shadow-sm mb-4">
             <Container>
+                <a className="navbar-brand" href="/">Dour</a>
                 <Nav className="me-auto">
                     <Nav.Link to = "/" as = { NavLink }>Home</Nav.Link>
                     <Nav.Link to = "/Store" as = { NavLink }>Store</Nav.Link>
                     <Nav.Link to = "/About" as = { NavLink }>About</Nav.Link>
+                    
+                    <NavDropdown title="Categories" id="basic-nav-dropdown">
+                        <NavDropdown.Item to = "/Store" as = { NavLink }>Interior</NavDropdown.Item>
+                        <NavDropdown.Item to = "/" as = { NavLink }>Engine Parts</NavDropdown.Item>
+                        <NavDropdown.Item to = "/" as = { NavLink }>I don't know</NavDropdown.Item>
+                    </NavDropdown>
                 </Nav>
                 {cartQuantity > 0 && (
                 <Button style={{ width: "3rem", height: "3rem", position: "relative", }}
