@@ -12,10 +12,9 @@ export function Navbar() {
     return (
         <NavbarBS className="bg-white shadow-sm mb-4">
             <Container>
-                <a className="navbar-brand" href="/">Dour</a>
+            <Nav.Link to = "/" as = { NavLink } style = {{ fontSize: '2rem', color: '#ad5264', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Dour</Nav.Link>
                 <Nav className="me-auto">
-                    <Nav.Link to = "/" as = { NavLink }>Home</Nav.Link>
-                    <Nav.Link to = "/Store" as = { NavLink }>Store</Nav.Link>
+                    <Nav.Link className="ml-4" to = "/Store" as = { NavLink }>Store</Nav.Link>
                     <Nav.Link to = "/About" as = { NavLink }>About</Nav.Link>
                     
                     <NavDropdown title="Categories" id="basic-nav-dropdown">
