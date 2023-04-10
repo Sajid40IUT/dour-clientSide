@@ -1,11 +1,18 @@
+import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import backgroundTexture from '../../public/imgs/bgTexture.jpg';
 
 export function Home() {
+
     return (
         <>
             <div className='Container'>
-                <h1 className="d-flex justify-content-center align-items-center" style={{ fontSize: '5rem', color: '#ad5264', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Dour</h1>
-                <h3 className='d-flex justify-content-center align-items-center' style={{ color: '#000000', WebkitTextFillColor: 'white', WebkitTextStroke: '1px black' }}>Prepare Yourself for the Gazipur Road</h3>
+                <h1 className="d-flex justify-content-center align-items-center" style={{ fontSize: '5rem', color: '#ad5264', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>
+                    Dour
+                </h1>
+                <h3 className='d-flex justify-content-center align-items-center' style={{ color: '#000000', WebkitTextFillColor: 'white', WebkitTextStroke: '1px black' }}>
+                    Prepare Yourself for the Gazipur Road
+                </h3>
             </div>
 
             <Carousel>

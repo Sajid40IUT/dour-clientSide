@@ -10,11 +10,15 @@ export function Navbar() {
     } = useShoppingCart()
     
     return (
-        <NavbarBS className="bg-white shadow-sm mb-4">
+        <NavbarBS className="bg-white shadow-sm mb-7">
             <Container>
-            <Nav.Link to = "/" as = { NavLink } style = {{ fontSize: '2rem', color: '#ad5264', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>Dour</Nav.Link>
+
+                <Nav.Link to = "/" as = { NavLink } className="" style = {{ paddingRight: '1rem', fontSize: '2rem', color: '#ad5264', fontWeight: 'bold', fontFamily: 'Arial, sans-serif' }}>
+                    Dour
+                </Nav.Link>
+
                 <Nav className="me-auto">
-                    <Nav.Link className="ml-4" to = "/Store" as = { NavLink }>Store</Nav.Link>
+                    <Nav.Link to = "/Store" as = { NavLink }>Store</Nav.Link>
                     <Nav.Link to = "/About" as = { NavLink }>About</Nav.Link>
                     
                     <NavDropdown title="Categories" id="basic-nav-dropdown">
@@ -23,11 +27,15 @@ export function Navbar() {
                         <NavDropdown.Item to = "/" as = { NavLink }>I don't know</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
+                <Nav style={{ paddingRight: "1rem" }} >
+                    <Nav.Link href="#login">Login</Nav.Link>
+                    <Button variant="outline-success">Sign Up</Button>
+                </Nav>
                 {cartQuantity > 0 && (
                 <Button style={{ width: "3rem", height: "3rem", position: "relative", }}
                         variant = "outline-primary"
                         onClick={openCart}
-                >
+                >   
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512"
