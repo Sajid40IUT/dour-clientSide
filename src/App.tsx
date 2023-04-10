@@ -5,7 +5,8 @@ import { Store } from './pages/Store'
 import { About } from './pages/About'
 import { Navbar } from './components/Navbar'
 import { ShoppingCartProvider } from './context/ShoppingCartContext'
-import backgroundTexture from '../public/imgs/bgTexture.jpg';
+import backgroundTexture from '/imgs/bgTexture.jpg';
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           </Routes>
         </Container>
       </div>
+      <Footer />
     </ShoppingCartProvider>
   )
 }

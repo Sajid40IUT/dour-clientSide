@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import backgroundTexture from '../../public/imgs/bgTexture.jpg';
 
 export function Home() {
 
@@ -24,8 +23,11 @@ export function Home() {
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h2>Welcome to Dour,</h2>
+                    <h5>
+                        an e-commerce platform dedicated to providing high-quality car parts for all your vehicle needs!
+                        Whether you're looking for brake pads, filters, tires, suspension parts, or any other car component, Dour has got you covered.
+                    </h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
