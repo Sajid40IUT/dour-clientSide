@@ -19,7 +19,7 @@ export function Navbar() {
 
                 <Nav className="me-auto">
                     <Nav.Link to = "/Store" as = { NavLink }>Store</Nav.Link>
-                    <Nav.Link to = "/About" as = { NavLink }>About</Nav.Link>
+                    <Nav.Link to = "/About" as = { NavLink }>Contact Us</Nav.Link>
                     
                     <NavDropdown title="Categories" id="basic-nav-dropdown">
                         <NavDropdown.Item to = "/Store" as = { NavLink }>Interior</NavDropdown.Item>
